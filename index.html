@@ -25,13 +25,43 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .message {
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Thank You!</h1>
-  <p>Your Aptech survey response has been successfully recorded.</p>
-  <p>Thank you for sharing your experience.</p>
+  <div class="message">
+    <h1>Thank You!</h1>
+    <p>Your response has been successfully recorded.</p>
+    <p>We really appreciate your collaboration and contribution to this independent survey.</p>
+  </div>
 
   <script>
     fbq('track', 'CompleteRegistration');
